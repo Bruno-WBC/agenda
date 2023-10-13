@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Lista de Contatos</title>
 </head>
 <body>
     <div class="container">
         <h1>Contatos</h1>
-        <form>
+        <form id="lista-contatos">
             <input type="text" id="name" placeholder="Nome do Contato" required>
             <input type="tel" id="phone" placeholder="Número do Celular" required>
             <button type="submit">Adicionar +</button>
         </form>
-        <table>
+        <table cellspacing="0">
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -22,15 +22,11 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Fulano</td>
-                    <td>(XX) 9 9999-9999</td>
-                </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <td>Número total de contatos</td>
-                    <td>10</td>
+                    <td>Total de Contatos</td>
+                    <td id="total-contatos">---</td>
                 </tr>
             </tfoot>
         </table>
